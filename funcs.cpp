@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cctype>
 #include <string>
 #include "funcs.h"
 using namespace std;
@@ -36,3 +35,19 @@ bool isAlphanumeric(string s){
     }
     return false;
 }
+
+bool nestedParens(string s){
+    if(s.empty()){
+        return true;
+    }
+    if(s[0] == '(' && s[s.length() - 1] == ')' && nestedParens(s.substr(1, s.length() - 2))){
+        return true;
+    }
+    return false;
+}
+
+// bool divisible(int *prices, int size){
+//     if(sumArray(prices,size) % 2 == 0){
+
+//     }
+// }

@@ -30,5 +30,9 @@ int main(){
     cout<<"TASK D - isAlphanumeric(\"ABCD\") is: "<< boolalpha << isAlphanumeric("ABCD") << endl;
     cout<<"TASK D - isAlphanumeric(\"Abcd1234xyz\") is: "<< boolalpha << isAlphanumeric("Abcd1234xyz") << endl;
     cout<<"TASK D - isAlphanumeric(\"KLMN 8-7-6\") is: "<< boolalpha << isAlphanumeric("KLMN 8-7-6") << endl;
-    
+
+//TASK E
+    cout<<"TASK E - nestedParens(\"((()))\") is: "<< boolalpha << nestedParens("((()))") << endl;
+    cout<<"TASK E - nestedParens(\"(()\") is: "<< boolalpha << nestedParens("(()") << endl;
+    cout<<"TASK E - nestedParens(\"a(b)c\") is: "<< boolalpha << nestedParens("a(b)c") << endl;
 }
